@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".Paypal" android:background="#0000BCD4" android:backgroundTint="#3F51B5">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registro de Pago"
+            android:textAlignment="center"
+            android:fontFamily="@font/montserrat_medium"
+            android:textSize="24sp"
+            android:textColor="#131315"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:paddingTop="10dp"
+    />
+
+    <ImageView
+            android:src="@drawable/stripe"
+            android:layout_width="match_parent"
+            android:layout_height="285dp"
+            android:id="@+id/imageView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:paddingTop="50dp"
+
+            android:layout_marginLeft="0dp" android:layout_marginStart="0dp"/>
+
+    <EditText
+            android:id="@+id/txtNombrePropietario"
+            android:layout_width="235dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTarjeta"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@+id/nombre_propietario"
+            android:paddingBottom="8dp"
+            android:paddingTop="16dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="16sp"
+            android:layout_marginLeft="128dp" android:layout_marginTop="-7dp"/>
+    <TextView
+            android:id="@+id/numero_tarjeta"
+            android:text="Numero Tarjeta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/imageView"
+            android:layout_marginRight="48dp"
+            android:paddingBottom="8dp"
+            android:paddingTop="16dp"
+            android:paddingLeft="8dp"
+            android:textSize="16sp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_marginLeft="4dp" android:layout_marginTop="-5dp" android:layout_marginStart="4dp"/>
+    <TextView
+            android:id="@+id/nombre_propietario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/numero_tarjeta"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:paddingBottom="8dp"
+            android:paddingTop="16dp"
+            android:layout_marginRight="48dp"
+            android:paddingLeft="8dp"
+            android:text="CVV"
+            android:textSize="16sp"
+            android:textAppearance="?android:attr/textAppearanceMedium" android:layout_marginLeft="4dp"
+            android:layout_marginTop="-1dp" android:layout_marginStart="4dp"/>
+    <TextView
+            android:id="@+id/anioCaducidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nombre_propietario"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:paddingBottom="8dp"
+            android:paddingTop="16dp"
+            android:paddingLeft="8dp"
+            android:text="Mes Caducidad"
+            android:textSize="16sp"
+            android:textAppearance="?android:attr/textAppearanceMedium" android:layout_marginLeft="4dp"
+            android:layout_marginTop="-1dp" android:layout_marginStart="4dp"/>
+    <TextView
+            android:id="@+id/cvv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/anioCaducidad"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:paddingBottom="8dp"
+            android:paddingTop="16dp"
+            android:paddingLeft="8dp"
+            android:text="Año Caducidad"
+            android:textSize="16sp"
+            android:textAppearance="?android:attr/textAppearanceMedium" android:layout_marginLeft="4dp"
+            android:layout_marginTop="0dp" android:layout_marginStart="4dp"/>
+    <EditText
+            android:id="@+id/txtCvv"
+            android:layout_width="238dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtCaducidad"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@+id/cvv"
+            android:paddingBottom="8dp"
+            android:paddingTop="16dp"
+            android:textSize="16sp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_marginLeft="48dp" android:layout_marginTop="-1dp"/>
+    <EditText
+            android:id="@+id/txtCaducidad"
+            android:layout_width="235dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtNombrePropietario"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@+id/anioCaducidad"
+            android:paddingBottom="8dp"
+            android:paddingTop="16dp"
+            android:textSize="16sp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_marginLeft="46dp" android:layout_marginTop="-3dp"/>
+    <EditText
+            android:id="@+id/txtTarjeta"
+            android:layout_width="232dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@+id/numero_tarjeta"
+            android:paddingBottom="8dp"
+            android:paddingTop="16dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="16sp"
+            android:layout_marginLeft="48dp" android:layout_marginTop="-5dp"/>
+
+
+    <Button xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnPagando"
+            android:layout_below="@+id/cvv"
+            android:textSize="18sp"
+            android:text="Pagar"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="21dp"
+            android:background="#5A7BEF"
+    />
+
+</RelativeLayout>
